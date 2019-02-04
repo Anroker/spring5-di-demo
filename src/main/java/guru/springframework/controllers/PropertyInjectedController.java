@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 public class PropertyInjectedController {
 
     @Autowired
-    public GreetingService greetingServiceImpl;
+    public GreetingService greetingServiceImpl; //beanName as Class or variable
 
     public String sayHello(){
         return greetingServiceImpl.sayGreeting();
